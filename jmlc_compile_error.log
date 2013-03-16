@@ -1,0 +1,12 @@
+----------
+1. ERROR in /home/w19816/runtime-EclipseApplication/aaaa/src/com/es/sample/TestMain.java (at line 5)
+	//@pre ab>10;
+	       ^^
+ab cannot be resolved
+----------
+2. ERROR in /home/w19816/runtime-EclipseApplication/aaaa/src/com/es/sample/TestMain.java (at line 9)
+	//@pre bb>10;
+	       ^^
+bb cannot be resolved
+----------
+2 problems (2 errors)

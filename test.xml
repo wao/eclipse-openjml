@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<builder-options>
+<workspace-path>/home/w19816/runtime-EclipseApplication</workspace-path>
+<project-path>/home/w19816/runtime-EclipseApplication/aaaa</project-path>
+<output-path>/aaaa/bin</output-path>
+<classpath>/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/resources.jar</classpath>
+<classpath>/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/rt.jar</classpath>
+<classpath>/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jsse.jar</classpath>
+<classpath>/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jce.jar</classpath>
+<classpath>/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/charsets.jar</classpath>
+<classpath>/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/localedata.jar</classpath>
+<classpath>/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/dnsns.jar</classpath>
+<classpath>/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/sunpkcs11.jar</classpath>
+<classpath>/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext/sunjce_provider.jar</classpath>
+<classpath>/home/w19816/runtime-EclipseApplication/lib/guava-14.0.jar</classpath>
+<classpath>/home/w19816/runtime-EclipseApplication/lib2</classpath>
+<resource>/home/w19816/runtime-EclipseApplication/aaaa/src/com/es/sample/TestMain.java</resource>
+<resource>/home/w19816/runtime-EclipseApplication/aaaa/src/com/es/sample/Second.java</resource>
+
+</builder-options>

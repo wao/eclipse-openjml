@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+$:.push( File.dirname(__FILE__) )
+
+require 'rexml/document'
+require 'open3'
+
+
+require 'jmlc_parser'
+
+def build_file( src_file, output_path, classpath, xml_builder )
+    cmd = "/home/w19816/bin/jml4c -d #{output_path} -source 1.6 -target 1.6 -bootclasspath '/usr/lib/jvm/java-6-sun/jre/lib/rt.jar:/home/w19816/usr/openjml/jml4rt.jar' -cp '#{classpath}' #{src_file}"
+    puts cmd
+    Open3.popen3(cmd) do |stdin,stdout,stderr,wait_thr|
+        xml_builder.process( stderr )
+    end
+end
+
+include REXML
+
+doc = Document.new $stdin.read
+
+output_path = doc.elements['builder-options/output-path'].text
+classpath = doc.elements.to_a('builder-options/classpath').map{|e|e.text}.join(":")
+xml_builder = XmlErrorBuilder.new($stderr).head()
+
+doc.elements.to_a('builder-options/resource').map{|e|e.text}.each do |src_file|
+    build_file( src_file, output_path, classpath, xml_builder )
+end
+
+xml_builder.tail()
